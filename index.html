@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding: 0;
+        }
+        #content{
+            text-align: center;
+            margin:50px auto;
+            width: 500px;
+            overflow: hidden;
+            font-family: "Adobe 宋体 Std L",serif;
+        }
+        ul li{
+            list-style: none;
+            float: left;
+        }
+        #nav li{
+            background-color: ghostwhite;
+            width:100px;
+            padding:10px 0;
+            font-size: 18px;
+        }
+        .child-list{
+            margin-left:30px;
+            width:200px;
+            line-height: 50px;
+        }
+        .child{
+            display: none;
+        }
+        #nav #on{
+            background-color: white;
+            font-weight: bold;
+        }
+        #on-child{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+<div id="content">
+    <ul id="nav">
+        <li class="parent" id="on">公告</li>
+        <li class="parent">规则</li>
+        <li class="parent">论坛</li>
+        <li class="parent">安全</li>
+        <li class="parent">公益</li>
+    </ul>
+    <div id="nav-child">
+        <div class="child" id="on-child">
+            <ul>
+                <li class="child-list">阿里53.7亿港币投资银泰</li>
+                <li class="child-list">总理强调扶持新兴业态</li>
+                <li class="child-list">马云忆与乔布斯论创新</li>
+                <li class="child-list">7万实名家政阿姨入手淘</li>
+            </ul>
+        </div>
+        <div class="child">
+            <ul>
+                <li class="child-list">[<a href="#">重要</a>] 抽检规则发布</li>
+                <li class="child-list">[<a href="#">重要</a>] 售假货控制方案</li>
+                <li class="child-list">[<a href="#">重要</a>] 违背承诺新规</li>
+                <li class="child-list">[<a href="#">重要</a>] 交易安全问题</li>
+            </ul>
+        </div>
+        <div class="child">
+            <ul>
+                <li class="child-list">[<a href="#">优化</a>] 称谓滥用将整</li>
+                <li class="child-list">[<a href="#">热点</a>] 如何赢取新商</li>
+                <li class="child-list">[<a href="#">话题</a>] 同城交易避处</li>
+                <li class="child-list">[<a href="#">聚焦</a>] 新消保法全解</li>
+            </ul>
+        </div>
+        <div class="child">
+            <ul>
+                <li class="child-list">个人重要信息要管牢!</li>
+                <li class="child-list">卖家防范红包欺诈提醒</li>
+                <li class="child-list">更换收货地址的陷阱!</li>
+                <li class="child-list">注意骗子的技术升级了!</li>
+            </ul>
+        </div>
+        <div class="child">
+            <ul>
+                <li class="child-list">玩拍卖开启筹款新模式</li>
+                <li class="child-list">阿里联手名企业自造蓝天</li>
+                <li class="child-list">公益讲师招募就等你了</li>
+                <li class="child-list">公益机构淘宝开店攻略</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="change_nav_menu.js"></script>
+</body>
+</html>
