@@ -19,25 +19,51 @@
             list-style: none;
             float: left;
         }
+        #nav{
+            position: relative;
+        }
         #nav li{
             background-color: ghostwhite;
-            width:100px;
+            width:99px;
             padding:10px 0;
             font-size: 18px;
+            border-left: 1px solid gainsboro;
+            border-bottom: 1px solid gainsboro;
+            border-top: 1px solid gainsboro;
+        }
+        #nav li:last-child{
+            border-right: 1px solid gainsboro;
+            width:98px;
+        }
+        #nav-child{
+            position: absolute;
+            margin-top: 42px;
+            width: 498px;
+            border-left: 1px solid gainsboro;
+            border-right: 1px solid gainsboro;
+            border-bottom: 1px solid gainsboro;
         }
         .child-list{
             margin-left:30px;
             width:200px;
             line-height: 50px;
         }
+         a{
+            text-decoration: none;
+             color: #000;
+        }
+         a:hover{
+             color: orange;
+         }
         .child{
             display: none;
         }
-        #nav #on{
+        #nav .on{
             background-color: white;
             font-weight: bold;
+            border-bottom: none;
         }
-        #on-child{
+        .child:first-child{
             display: block;
         }
 
@@ -46,51 +72,51 @@
 <body>
 <div id="content">
     <ul id="nav">
-        <li class="parent" id="on">公告</li>
-        <li class="parent">规则</li>
-        <li class="parent">论坛</li>
-        <li class="parent">安全</li>
-        <li class="parent">公益</li>
+        <li class="on"><a href="#">公告</a></li>
+        <li ><a href="#">规则</a></li>
+        <li ><a href="#">论坛</a></li>
+        <li ><a href="#">安全</a></li>
+        <li ><a href="#">公益</a></li>
     </ul>
     <div id="nav-child">
-        <div class="child" id="on-child">
+        <div class="child" >
             <ul>
-                <li class="child-list">阿里53.7亿港币投资银泰</li>
-                <li class="child-list">总理强调扶持新兴业态</li>
-                <li class="child-list">马云忆与乔布斯论创新</li>
-                <li class="child-list">7万实名家政阿姨入手淘</li>
+                <li class="child-list"><a href="#">阿里53.7亿港币投资银泰</a> </li>
+                <li class="child-list"><a href="#">总理强调扶持新兴业态</a> </li>
+                <li class="child-list"><a href="#">马云忆与乔布斯论创新</a> </li>
+                <li class="child-list"><a href="#">7万实名家政阿姨入手淘</a> </li>
             </ul>
         </div>
         <div class="child">
             <ul>
-                <li class="child-list">[<a href="#">重要</a>] 抽检规则发布</li>
-                <li class="child-list">[<a href="#">重要</a>] 售假货控制方案</li>
-                <li class="child-list">[<a href="#">重要</a>] 违背承诺新规</li>
-                <li class="child-list">[<a href="#">重要</a>] 交易安全问题</li>
+                <li class="child-list"><a href="#">[重要] 抽检规则发布</a></li>
+                <li class="child-list"><a href="#">[重要] 售假货控制方案</a></li>
+                <li class="child-list"><a href="#">[重要] 违背承诺新规</a></li>
+                <li class="child-list"><a href="#">[重要] 交易安全问题</a></li>
             </ul>
         </div>
         <div class="child">
             <ul>
-                <li class="child-list">[<a href="#">优化</a>] 称谓滥用将整</li>
-                <li class="child-list">[<a href="#">热点</a>] 如何赢取新商</li>
-                <li class="child-list">[<a href="#">话题</a>] 同城交易避处</li>
-                <li class="child-list">[<a href="#">聚焦</a>] 新消保法全解</li>
+                <li class="child-list"><a href="#">[优化] 称谓滥用将整</a></li>
+                <li class="child-list"><a href="#">[热点] 如何赢取新商</a></li>
+                <li class="child-list"><a href="#">[话题] 同城交易避处</a></li>
+                <li class="child-list"><a href="#">[聚焦] 新消保法全解</a></li>
             </ul>
         </div>
         <div class="child">
             <ul>
-                <li class="child-list">个人重要信息要管牢!</li>
-                <li class="child-list">卖家防范红包欺诈提醒</li>
-                <li class="child-list">更换收货地址的陷阱!</li>
-                <li class="child-list">注意骗子的技术升级了!</li>
+                <li class="child-list"><a href="#">个人重要信息要管牢!</a></li>
+                <li class="child-list"><a href="#">卖家防范红包欺诈提醒</a></li>
+                <li class="child-list"><a href="#">更换收货地址的陷阱!</a></li>
+                <li class="child-list"><a href="#">注意骗子的技术升级了!</a></li>
             </ul>
         </div>
         <div class="child">
             <ul>
-                <li class="child-list">玩拍卖开启筹款新模式</li>
-                <li class="child-list">阿里联手名企业自造蓝天</li>
-                <li class="child-list">公益讲师招募就等你了</li>
-                <li class="child-list">公益机构淘宝开店攻略</li>
+                <li class="child-list"><a href="#">玩拍卖开启筹款新模式</a></li>
+                <li class="child-list"><a href="#">阿里联手名企业自造蓝天</a></li>
+                <li class="child-list"><a href="#">公益讲师招募就等你了</a></li>
+                <li class="child-list"><a href="#">公益机构淘宝开店攻略</a></li>
             </ul>
         </div>
     </div>
